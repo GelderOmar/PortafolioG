@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -59,6 +60,14 @@ const Contact = () => {
         </label>
         <button type="submit">Send</button>
       </form>
+      <div className="social-icons">
+        <a href="https://www.linkedin.com/in/gelder-omar-ts" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin size={50} />
+        </a>
+        <a href="https://github.com/GelderOmar" target="_blank" rel="noopener noreferrer">
+          <FaGithub size={50} />
+        </a>
+      </div>
     </section>
   );
 };

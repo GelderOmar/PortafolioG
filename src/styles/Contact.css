@@ -69,3 +69,43 @@
     padding: 0.4rem 0.8rem; /* Ajustar el padding del botón */
   }
 }
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social-icons a {
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* color de LinkedIn */
+}
+
+.social-icons a:nth-child(2):hover {
+  color: #ee9828; /* color de GitHub */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 30px;
+  }
+  .social-icons a svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 20px;
+  }
+  .social-icons a svg {
+    width: 30px;
+    height: 30px;
+  }
+}
